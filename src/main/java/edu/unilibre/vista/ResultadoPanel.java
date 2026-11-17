@@ -151,7 +151,7 @@ public class ResultadoPanel extends JPanel {
         boolean humanoGano = ganador == humano;
         lblTituloPuntos.setText(fin ? "PUNTUACIÓN FINAL" : "PUNTUACIÓN");
         if (fin) {
-            lblTitulo.setText(humanoGano ? "CAMPEONA" : "FIN DE LA PARTIDA");
+            lblTitulo.setText(humanoGano ? "CAMPEON" : "FIN DE LA PARTIDA");
             lblMensaje.setText(humanoGano ? "¡Victoria!" : "Derrota");
             lblDetalle.setText(humanoGano
                     ? "Terminaste la partida en " + rondas(juego.getNumeroRonda())

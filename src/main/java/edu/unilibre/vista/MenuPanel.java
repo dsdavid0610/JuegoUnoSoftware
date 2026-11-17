@@ -288,9 +288,6 @@ public class MenuPanel extends JPanel {
         gl.dispose();
     }
 
-    // ------------------------------------------------------------------ componentes propios
-
-
     private JComponent insignia(int numero) {
         JComponent insignia = new JComponent() {
             @Override
@@ -312,7 +309,6 @@ public class MenuPanel extends JPanel {
         insignia.setPreferredSize(new Dimension(32, 32));
         return insignia;
     }
-
 
     public static JButton crearBoton(String texto, Color fondo, int tamano, boolean contorno) {
         JButton boton = new JButton(texto) {

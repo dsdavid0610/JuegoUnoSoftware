@@ -113,8 +113,6 @@ public class TableroPanel extends JPanel {
         repaint();
     }
 
-    // ------------------------------------------------------------------ geometría (lienzo virtual)
-
     private double escala() {
         double s = Math.min(getWidth() / (double) 1200, getHeight() / (double) 800);
         return s > 0 ? s : 1;
@@ -218,8 +216,6 @@ public class TableroPanel extends JPanel {
         return !carta.esMasCuatro() || !humano.tieneCartaDeColor(juego.getColorActual());
     }
 
-    // ------------------------------------------------------------------ interacción
-
     private void alHacerClic(int x, int y) {
         Point2D p = aVirtual(x, y);
         if (areaMenu().contains(p)) {
@@ -247,8 +243,6 @@ public class TableroPanel extends JPanel {
         }
         acciones.jugar(carta);
     }
-
-    // ------------------------------------------------------------------ pintado
 
     @Override
     protected void paintComponent(Graphics g) {
@@ -388,7 +382,6 @@ public class TableroPanel extends JPanel {
     }
 
     private void dibujarCentro(Graphics2D g2) {
-        // mazo
         for (int i = 2; i >= 0; i--) {
             DibujoCartas.dibujarCartas(g2, 405 + i * 3, 280 - i * 3, null, null);
         }

@@ -15,7 +15,6 @@ public class RobotEstandar implements EstrategiaRobot {
             .filter(color -> color != ColorCarta.CAMBIO_COLOR)
             .map(ColorCarta::name)
             .toList();
-
     protected final Random azar = new Random();
 
     @Override

@@ -161,12 +161,10 @@ public class MenuPanel extends JPanel {
         lblError.setText(mensaje == null || mensaje.isBlank() ? " " : mensaje);
     }
 
-
     public void cambiarRobots(int delta) {
         cantidadRobots = Math.max(1, Math.min(3, cantidadRobots + delta));
         actualizarRobots();
     }
-
 
     public void arrancar() {
         String nombre = campoNombre.getText().trim();
@@ -201,8 +199,6 @@ public class MenuPanel extends JPanel {
     public JLabel getLblError() {
         return lblError;
     }
-
-    // ------------------------------------------------------------------ pintado
 
     @Override
     public void doLayout() {

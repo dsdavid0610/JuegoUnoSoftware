@@ -390,8 +390,6 @@ public class TableroPanel extends JPanel {
         pildora(g2, "ROBAR", 455, 462, 13, sinJugada ? new Color(255, 232, 90) : new Color(238, 214, 90));
         g2.setFont(new Font(Font.SANS_SERIF, Font.ITALIC, 12));
         centrado(g2, juego.cartasEnMazo() + (juego.cartasEnMazo() == 1 ? " carta en el mazo" : " en el mazo"), 455, 488, new Color(205, 220, 212));
-
-        // anillo de color y sentido del juego
         double cx = 667;
         double cy = 355;
         Color activo = DibujoCartas.colorDe(juego.getColorActual());
@@ -413,7 +411,6 @@ public class TableroPanel extends JPanel {
             flechaCircular(g2, cx, cy, 158, 105, 20);
         }
 
-        // carta de la mesa
         Carta tope = juego.getCartaSuperior();
         Graphics2D gc = (Graphics2D) g2.create();
         gc.translate(cx, cy);
@@ -519,7 +516,6 @@ public class TableroPanel extends JPanel {
         centrado(g2, mensajeToast, 600, 546, Color.WHITE);
     }
 
-    // ------------------------------------------------------------------ fin de ronda
 
     private void dibujarFinDeRonda(Graphics2D g2) {
         Jugador ganador = juego.getGanador();

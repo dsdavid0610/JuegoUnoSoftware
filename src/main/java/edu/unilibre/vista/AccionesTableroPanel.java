@@ -15,3 +15,4 @@ public interface AccionesTableroPanel {
 
     void volverMenu();
 }
+

@@ -53,7 +53,6 @@ public class MenuPanel extends JPanel {
         preparar();
     }
 
-    /** Construye los componentes del menú. */
     public void preparar() {
         removeAll();
         setLayout(null);
@@ -356,3 +355,4 @@ public class MenuPanel extends JPanel {
         return boton;
     }
 }
+

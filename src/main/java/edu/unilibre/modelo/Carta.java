@@ -112,11 +112,14 @@ public class Carta {
         String etiqueta;
         if (esMasDos()) {
             etiqueta = "+2";
-        } else if (esSalta()) {
+        }
+        else if (esSalta()) {
             etiqueta = "SALTA";
-        } else if (esReversa()) {
+        }
+        else if (esReversa()) {
             etiqueta = "REVERSA";
-        } else {
+        }
+        else {
             etiqueta = valor;
         }
         return color + " " + etiqueta;

@@ -166,7 +166,8 @@ public class VentanaUno extends JFrame implements InicioMenuPanel, AccionesTable
     private void continuarDesdeResultado() {
         if (juego.getGanadorPartida() != null) {
             iniciar(nombreHumano, robotsActuales);
-        } else {
+        }
+        else {
             botonFin();
         }
     }
@@ -214,7 +215,8 @@ public class VentanaUno extends JFrame implements InicioMenuPanel, AccionesTable
             if (turno.dijoUno()) {
                 mensaje.append(" · ¡UNO!");
             }
-        } else {
+        }
+        else {
             mensaje.append(" robó ").append(turno.cartasRobadas())
                     .append(turno.cartasRobadas() == 1 ? " carta" : " cartas");
             anotarPenalizacionUno(mensaje, turno.penalizadoPorUno());
@@ -231,7 +233,8 @@ public class VentanaUno extends JFrame implements InicioMenuPanel, AccionesTable
     private void despuesDeJugada() {
         if (juego.hayGanador()) {
             terminarRonda();
-        } else {
+        }
+        else {
             programarTurnoRobot();
         }
     }

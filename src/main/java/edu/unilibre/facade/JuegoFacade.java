@@ -98,9 +98,7 @@ public class JuegoFacade {
             victorias += Boolean.parseBoolean(p[4]) ? 1 : 0;
             rondas += Integer.parseInt(p[6]);
         }
-        return texto.append("\n").append(String.format(
-                "Partidas: %d | Victorias: %d | Derrotas: %d | Rondas promedio: %.1f",
-                partidas.size(), victorias, partidas.size() - victorias, rondas / partidas.size())).toString();
+        return texto.append("\n").append(String.format("Partidas: %d | Victorias: %d | Derrotas: %d | Rondas promedio: %.1f", partidas.size(), victorias, partidas.size() - victorias, rondas / partidas.size())).toString();
     }
 
     void registrarPartida(String humano, String ganador, boolean ganoHumano, int puntos, int rondas) {
@@ -136,7 +134,6 @@ public class JuegoFacade {
                         partidas.add(campos);
                     }
                 } catch (RuntimeException lineaDanada) {
-
                 }
             }
         } catch (IOException e) {
@@ -181,7 +178,6 @@ public class JuegoFacade {
         return juego.huboPenalizacionUno() ? juego.getJugadorPenalizadoUno() : null;
     }
 
-    /** Color automático para un jugador sin estrategia (por ejemplo, si el humano cierra el diálogo). */
     public String elegirColorAutomatico(Jugador jugador) {
         return estrategiaPorDefecto.elegirColor(jugador);
     }

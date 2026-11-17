@@ -16,7 +16,7 @@ class JuegoUnoTest {
         assertEquals(7, juego.getJugadores().get(0).cantidadCartas());
         assertEquals(7, juego.getJugadores().get(1).cantidadCartas());
         assertEquals(1, juego.getNumeroRonda());
-        assertTrue(eventos.contains("ronda iniciada"));
+        assertTrue(eventos.contains("Ronda Iniciada"));
         assertNotNull(juego.getCartaSuperior());
     }
 }

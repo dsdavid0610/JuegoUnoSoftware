@@ -46,7 +46,6 @@ public class PartidaBuilder {
         JuegoUno juego = fabricas == null ? new JuegoUno() : new JuegoUno(fabricas);
         juego.agregarJugador(new Jugador(nombreHumano));
         for (int i = 1; i <= cantidadRobots; i++) {
-            // Los robots alternan de estrategia: estándar, agresivo, estándar...
             Jugador robot = i % 2 == 1
                     ? new Jugador("Robot " + i, new RobotEstandar())
                     : new Jugador("Robot " + i, new RobotAgresivo());

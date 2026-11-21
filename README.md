@@ -20,8 +20,7 @@ Aplicación de escritorio del juego UNO desarrollada en Java. Permite que una pe
 2. Requisitos previos
 - JDK 26 instalado.
 - IntelliJ IDEA.
-- Maven instalado si se desea compilar y ejecutar los comandos desde una terminal. IntelliJ IDEA también puede utilizar el Maven integrado.
-El proyecto configura las versiones maven.compiler.source y maven.compiler.target en Java 26. Por eso, debe utilizarse un JDK compatible.
+- Maven instalado.
 3. Descargar el proyecto
 Clonar el repositorio:
 git clone https://github.com/dsdavid0610/JuegoUnoSoftware.git

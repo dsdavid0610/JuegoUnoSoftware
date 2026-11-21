@@ -1,5 +1,4 @@
 package edu.unilibre.controlador;
-
 import edu.unilibre.modelo.ObservadorJuego;
 import org.junit.jupiter.api.Test;
 import javax.swing.JFrame;

@@ -1,4 +1,5 @@
 Juego UNO – JuegoUnoSoftware
+
 Aplicación de escritorio del juego UNO desarrollada en Java. Permite que una persona juegue contra uno, dos o tres robots que realizan sus jugadas automáticamente. La aplicación cuenta con una interfaz gráfica desarrollada con Java Swing y utiliza Maven para la gestión y compilación del proyecto.
 1. Funcionalidades implementadas
 - Iniciar una partida desde la interfaz gráfica.

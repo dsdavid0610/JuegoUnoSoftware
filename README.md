@@ -49,53 +49,8 @@ mvn package
 El resultado de la compilación se genera en la carpeta target/.
 
 La aplicación gráfica se inicia ejecutando el método main de VentanaUno desde IntelliJ IDEA. El proyecto no configura en este README un JAR ejecutable con todas las dependencias; por ello, no se debe asumir que basta con ejecutar java -jar sobre cualquier archivo generado en target/.
-6. Estructura general del proyecto
-JuegoUnoSoftware/
-├── pom.xml
-└── src/
-    ├── main/
-    │   └── java/edu/unilibre/
-    │       ├── builder/
-    │       │   └── PartidaBuilder.java
-    │       ├── controlador/
-    │       │   └── VentanaUno.java
-    │       ├── fabrica/
-    │       │   ├── FabricaCartas.java
-    │       │   ├── FabricaCartasEspeciales.java
-    │       │   └── FabricaCartasNumericas.java
-    │       ├── facade/
-    │       │   ├── JuegoFacade.java
-    │       │   └── ResultadoTurnoRobot.java
-    │       ├── modelo/
-    │       │   ├── Carta.java
-    │       │   ├── ColorCarta.java
-    │       │   ├── EstrategiaRobot.java
-    │       │   ├── JuegoUno.java
-    │       │   ├── Jugador.java
-    │       │   ├── ObservadorJuego.java
-    │       │   ├── RobotAgresivo.java
-    │       │   ├── RobotEstandar.java
-    │       │   └── TipoCarta.java
-    │       └── vista/
-    │           ├── AccionesTableroPanel.java
-    │           ├── DibujoCartas.java
-    │           ├── InicioMenuPanel.java
-    │           ├── MenuPanel.java
-    │           ├── ResultadoPanel.java
-    │           └── TableroPanel.java
-    └── test/
-        └── java/edu/unilibre/
-            ├── PartidaBuilderTest.java
-            ├── VentanaUnoTest.java
-            ├── FabricaCartasEspecialesTest.java
-            ├── FabricaCartasNumericasTest.java
-            ├── JuegoFacadeTest.java
-            ├── CartaTest.java
-            ├── JuegoUnoTest.java
-            ├── JugadorTest.java
-            ├── RobotAgresivoTest.java
-            └── RobotEstandarTest.java
-7. Patrones de diseño utilizados
+
+6. Patrones de diseño utilizados
 El proyecto utiliza cinco patrones de diseño:
 Strategy (Estrategia)
 Permite definir distintas formas de seleccionar jugadas para los robots.
@@ -122,13 +77,13 @@ Permite configurar y construir una partida paso a paso.
 - PartidaBuilder: configura el nombre del jugador, la cantidad de robots y las fábricas de cartas.
 - build(): construye y devuelve el objeto que representa la partida.
 - JuegoFacade: utiliza el constructor al iniciar una nueva partida.
-8. Pruebas
+7. Pruebas
 El proyecto contiene 10 pruebas unitarias organizadas bajo src/test/java. Para ejecutarlas desde la terminal:
 mvn test
 También se pueden ejecutar desde IntelliJ IDEA abriendo las clases de prueba y seleccionando Run.
-9. Historial de partidas
+8. Historial de partidas
 La aplicación registra resultados en el archivo historial_uno.csv mediante la funcionalidad de historial de JuegoFacade. Este registro contiene información resumida de las partidas. No corresponde a guardar y restaurar el estado completo de una partida que todavía está en curso, este se puede borrar y no afectaría de nada el código, si se borra se vuelve a generar un archivo al finalizar la partida.
-10. Información del proyecto
+9. Información del proyecto
 - Repositorio: https://github.com/dsdavid0610/JuegoUnoSoftware
 - Wiki: https://github.com/dsdavid0610/JuegoUnoSoftware/wiki
 - Lenguaje: Java

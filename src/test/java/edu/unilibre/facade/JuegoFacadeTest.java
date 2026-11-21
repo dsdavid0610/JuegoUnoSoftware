@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class JuegoFacadeTest {
-    @Test void iniciaPartidaYExponeJugadoresPorLaFachada() {
+    @Test void iniciaPartidaYExponeJugadoresPorLaFachada()  {
         JuegoFacade facade = new JuegoFacade();
         facade.iniciarPartida("Natalia", 2);
         assertEquals(3, facade.cantidadJugadores());

@@ -83,12 +83,6 @@ mvn test
 También se pueden ejecutar desde IntelliJ IDEA abriendo las clases de prueba y seleccionando Run.
 8. Historial de partidas
 La aplicación registra resultados en el archivo historial_uno.csv mediante la funcionalidad de historial de JuegoFacade. Este registro contiene información resumida de las partidas. No corresponde a guardar y restaurar el estado completo de una partida que todavía está en curso, este se puede borrar y no afectaría de nada el código, si se borra se vuelve a generar un archivo al finalizar la partida.
-9. Información del proyecto
-- Repositorio: https://github.com/dsdavid0610/JuegoUnoSoftware
-- Wiki: https://github.com/dsdavid0610/JuegoUnoSoftware/wiki
-- Lenguaje: Java
-- Interfaz gráfica: Java Swing
-- Gestor de dependencias y compilación: Maven
-11. Integrantes
+9. Integrantes
 - David Santiago Granja Espinosa
 - Juan Enrique Galeano Vargas

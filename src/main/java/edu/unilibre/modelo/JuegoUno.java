@@ -329,7 +329,7 @@ public class JuegoUno {
                 .mapToInt(Jugador::calcularPuntosMano)
                 .sum();
         ganador.sumarPuntos(puntosGanador);
-        if (ganador.getPuntos() >= 250) {
+        if (ganador.getPuntos() >= 20) {
             ganadorPartida = ganador;
         }
     }
